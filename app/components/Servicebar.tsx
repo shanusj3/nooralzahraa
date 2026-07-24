@@ -14,12 +14,12 @@ const services = [
   {
     title: "HAIR\nTREATMENTS",
     subtitle: "Nourish & Repair",
-   image: "/assets/HAIR_TREATMENTS.png",
+    image: "/assets/HAIR_TREATMENTS.png",
   },
   {
     title: "SKIN\nCARE",
     subtitle: "Glow naturally",
-      image: "/assets/SKIN_CARE.png",
+    image: "/assets/SKIN_CARE.png",
   },
   {
     title: "NAIL\nART",
@@ -29,7 +29,7 @@ const services = [
   {
     title: "BRIDAL\nSERVICES",
     subtitle: "For your big day",
-     image: "/assets/BRIDAL_SERVICES.png",
+    image: "/assets/BRIDAL_SERVICES.png",
   },
 ];
 

@@ -1,3 +1,5 @@
+import AnimateOnScroll from '@/app/components/AnimateOnScroll';
+
 export default function TestimonialSection() {
   const testimonials = [
     {
@@ -25,7 +27,7 @@ export default function TestimonialSection() {
       <div className="mx-auto max-w-7xl">
         
         {/* Header */}
-        <div className="flex flex-col items-center text-center mb-16">
+        <AnimateOnScroll className="flex flex-col items-center text-center mb-16">
           <p className="mb-4 text-xs font-medium uppercase tracking-[4px] text-[#B99866]">
             TESTIMONIALS
           </p>
@@ -37,12 +39,12 @@ export default function TestimonialSection() {
             <span className="text-[#B99866]">✦</span>
             <span className="h-px w-10 bg-[#B99866]/60" />
           </div>
-        </div>
+        </AnimateOnScroll>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((item, idx) => (
-            <div key={idx} className="flex flex-col items-center text-center bg-white rounded-2xl p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-[#EADFCF]/50">
+            <AnimateOnScroll key={idx} delay={`delay-${(idx + 1) * 100}` as any} className="flex flex-col items-center text-center bg-white rounded-2xl p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-[#EADFCF]/50">
               {/* Star Rating */}
               <div className="flex gap-1 mb-6">
                 {[...Array(item.rating)].map((_, i) => (
@@ -60,7 +62,7 @@ export default function TestimonialSection() {
                 <h4 className="font-semibold text-[#241B14] text-[16px]">{item.name}</h4>
                 <p className="text-xs text-[#B99866] mt-1 uppercase tracking-widest">{item.service}</p>
               </div>
-            </div>
+            </AnimateOnScroll>
           ))}
         </div>
 
