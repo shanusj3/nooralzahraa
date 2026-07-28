@@ -35,11 +35,11 @@ export default function GalleryPreviewSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A0807]/90 via-[#0A0807]/40 to-transparent" />
             
             {/* Content overlay */}
-            <div className="absolute inset-0 flex flex-col justify-end items-start text-left p-6 sm:p-8">
-              <h3 className="font-cormorant text-[28px] sm:text-[36px] lg:text-[42px] font-bold uppercase leading-[1.05] text-white mb-2">
+            <div className="absolute inset-0 flex flex-col justify-end items-start text-left p-4 sm:p-8">
+              <h3 className="font-cormorant text-[22px] sm:text-[36px] lg:text-[42px] font-bold uppercase leading-[1.05] text-white mb-1 sm:mb-2">
                 LADIES<br />COLLECTION
               </h3>
-              <p className="font-allura italic text-[#C5A880] text-lg sm:text-xl mb-5">
+              <p className="font-allura italic text-[#C5A880] text-base sm:text-xl mb-3 sm:mb-5">
                 Graceful. Timeless. You.
               </p>
               <Link
@@ -63,11 +63,11 @@ export default function GalleryPreviewSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A0807]/90 via-[#0A0807]/40 to-transparent" />
             
             {/* Content overlay */}
-            <div className="absolute inset-0 flex flex-col justify-end items-start text-left p-6 sm:p-8">
-              <h3 className="font-cormorant text-[28px] sm:text-[36px] lg:text-[42px] font-bold uppercase leading-[1.05] text-white mb-2">
+            <div className="absolute inset-0 flex flex-col justify-end items-start text-left p-4 sm:p-8">
+              <h3 className="font-cormorant text-[22px] sm:text-[36px] lg:text-[42px] font-bold uppercase leading-[1.05] text-white mb-1 sm:mb-2">
                 KIDS<br />COLLECTION
               </h3>
-              <p className="font-allura italic text-[#C5A880] text-lg sm:text-xl mb-5">
+              <p className="font-allura italic text-[#C5A880] text-base sm:text-xl mb-3 sm:mb-5">
                 Little Styles. Big Dreams.
               </p>
               <Link
