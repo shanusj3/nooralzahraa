@@ -11,15 +11,15 @@ export default function ServicesHero() {
       <div className="relative z-10 mx-auto max-w-7xl flex flex-col items-center text-center">
         <AnimateOnScroll className="flex flex-col items-center text-center" threshold={0.05}>
           <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-[#B99866]">
-            LUXURY EXPERIENCES
+            LUXURY COUTURE &amp; TAILORING
           </p>
 
           <h1 className="mb-6 font-cormorant text-[44px] font-medium leading-tight text-white md:text-[60px] lg:text-[72px]">
-            Our Services
+            Our Services &amp; Collections
           </h1>
 
           <h2 className="font-allura text-[36px] text-[#B99866] md:text-[50px]">
-            Tailored to Your Elegance
+            Designed for Your Elegance
           </h2>
 
           <div className="my-10 flex items-center justify-center gap-3">
@@ -29,9 +29,9 @@ export default function ServicesHero() {
           </div>
 
           <p className="max-w-[600px] text-[16px] leading-relaxed text-gray-300">
-            Discover our comprehensive range of premium beauty treatments. Each service is
-            meticulously designed to enhance your natural beauty and provide an unforgettable
-            experience of relaxation and luxury.
+            Discover our wide range of premium custom garments, festive kids collections,
+            and precise tailoring. Each design is meticulously crafted to fit you perfectly
+            and make every occasion special.
           </p>
         </AnimateOnScroll>
       </div>

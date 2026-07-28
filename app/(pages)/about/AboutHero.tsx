@@ -9,7 +9,7 @@ export default function AboutHero() {
       
       <div className="relative z-10 mx-auto max-w-7xl flex flex-col items-center text-center">
         <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-[#B99866]">
-          THE NOOR AL ZAHRAA EXPERIENCE
+          THE NOOR AL ZAHRAA BOUTIQUE
         </p>
         
         <h1 className="mb-6 font-cormorant text-[50px] font-medium leading-tight text-white md:text-[60px] lg:text-[72px]">
@@ -17,7 +17,7 @@ export default function AboutHero() {
         </h1>
         
         <h2 className="font-allura text-[40px] text-[#B99866] md:text-[50px]">
-          Where Beauty Meets Elegance
+          Where Fashion Meets Elegance
         </h2>
         
         <div className="my-10 flex items-center justify-center gap-3">
@@ -27,7 +27,7 @@ export default function AboutHero() {
         </div>
         
         <p className="max-w-[650px] text-[16px] leading-relaxed text-gray-300">
-          Founded on a passion for transformative beauty and unparalleled luxury, Noor Al Zahraa Ladies Salon has become a sanctuary for women seeking to look and feel their absolute best. We believe that true beauty shines brightest when nurtured with care and expertise.
+          Founded on a passion for bespoke fashion, premium tailoring, and exceptional design, Noor Al Zahraa Ladies & Kids Boutique has become a premier destination for women seeking unique, custom-made clothing and beautiful kids collections. We believe that fine tailoring is an art form, and we craft every piece with precision, love, and expertise.
         </p>
       </div>
     </section>

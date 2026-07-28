@@ -8,7 +8,7 @@ export default function OffersHero() {
       
       <div className="relative z-10 mx-auto max-w-7xl flex flex-col items-center text-center">
         <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-[#B99866]">
-          INDULGE IN LUXURY
+          EXQUISITE DESIGNS
         </p>
         
         <h1 className="mb-6 font-cormorant text-[50px] font-medium leading-tight text-white md:text-[60px] lg:text-[72px]">
@@ -22,7 +22,7 @@ export default function OffersHero() {
         </div>
         
         <p className="max-w-[600px] text-[16px] leading-relaxed text-gray-300">
-          Discover our thoughtfully curated packages and seasonal specials. Treat yourself or a loved one to an extraordinary experience of beauty and relaxation at an exceptional value.
+          Discover our thoughtfully curated fashion packages and seasonal design specials. Treat yourself or your children to custom tailored outfits and styling consultations at an exceptional value.
         </p>
       </div>
     </section>

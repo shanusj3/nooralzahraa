@@ -3,166 +3,94 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[92vh] overflow-hidden bg-[#090706] flex items-center justify-center">
-      {/* Background Image */}
-      {/* Desktop image position — face is ~65% from left */}
-      <Image
-        src="/assets/hero_section_image.webp"
-        alt="Hero"
-        fill
-        priority
-        className="object-cover object-[65%_25%] md:object-[76%_center] select-none"
-      />
+    <section className="relative min-h-[92vh] overflow-hidden bg-[#0A0807] flex items-center">
+      {/* Background Mother-Daughter Image */}
+      <div className="absolute inset-0 pointer-events-none z-10">
+        <Image
+          src="/assets/hero_portrait.png"
+          alt="Al Zahraa Mother and Daughter"
+          fill
+          priority
+          className="object-cover object-[75%_center] md:object-[82%_center] select-none"
+        />
+      </div>
 
-      {/* Gradient Overlay — darkens more on mobile for readability */}
+      {/* Dark gradient overlay for desktop */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 z-15 pointer-events-none hidden md:block"
         style={{
           background: `linear-gradient(
             90deg,
-            rgba(9,7,6,.98) 0%,
-            rgba(9,7,6,.95) 25%,
-            rgba(9,7,6,.85) 45%,
-            rgba(9,7,6,.65) 60%,
-            rgba(9,7,6,.40) 75%,
-            rgba(9,7,6,0)  100%
+            #0A0807 0%,
+            #0A0807 35%,
+            rgba(10, 8, 7, 0.98) 45%,
+            rgba(10, 8, 7, 0.8) 55%,
+            rgba(10, 8, 7, 0.4) 68%,
+            rgba(10, 8, 7, 0.1) 82%,
+            rgba(10, 8, 7, 0) 100%
           )`,
         }}
       />
-      {/* Mobile overlay — darken bottom half so text is readable, keep top (face) clearer */}
+
+      {/* Dark gradient overlay for mobile */}
       <div
-        className="absolute inset-0 md:hidden"
+        className="absolute inset-0 z-15 pointer-events-none md:hidden"
         style={{
           background: `linear-gradient(
             to bottom,
-            rgba(9,7,6,0.10) 0%,
-            rgba(9,7,6,0.25) 35%,
-            rgba(9,7,6,0.75) 60%,
-            rgba(9,7,6,0.92) 100%
+            rgba(10, 8, 7, 0.1) 0%,
+            rgba(10, 8, 7, 0.3) 40%,
+            rgba(10, 8, 7, 0.7) 70%,
+            #0A0807 100%
           )`,
         }}
       />
 
       {/* Bottom fade */}
-      <div
-        className="absolute bottom-0 left-0 w-full h-[120px] pointer-events-none"
-        style={{
-          background: `linear-gradient(to top, #090706 0%, rgba(9,7,6,.9) 30%, transparent 100%)`,
-        }}
-      />
+      <div className="absolute bottom-0 left-0 w-full h-[80px] pointer-events-none z-15 bg-gradient-to-t from-[#0A0807] to-transparent" />
 
-      {/* ── CONTENT ── */}
-      {/* Mobile: full-width centered column | Desktop: left-aligned inside max-w container */}
-      <div className="relative z-20 w-full">
-
-        {/* Mobile layout — visible only below md */}
-        <div className="flex flex-col items-center text-center px-6 pt-28 pb-40 md:hidden">
-          <p className="mb-4 text-[10px] font-medium uppercase tracking-[6px] text-[#B99866]">
-            EXPERT CARE. STUNNING YOU.
+      {/* Content Container */}
+      <div className="mx-auto max-w-[1440px] w-full px-6 sm:px-12 lg:px-20 pt-32 pb-24 relative z-20">
+        <div className="max-w-[580px] flex flex-col items-center text-center md:items-start md:text-left">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[4px] text-[#C5A880] flex items-center gap-2">
+            TIMELESS ELEGANCE <span className="text-[10px]">✦</span>
           </p>
 
-          <h1 className="font-cormorant font-semibold text-[#F7EFE6] text-[40px] sm:text-[48px] leading-[1.05]">
-            Hair, Beauty &amp;
+          <h1 className="font-cormorant font-medium text-[#F7EFE6] text-[40px] sm:text-[52px] lg:text-[62px] leading-[1.08]">
+            Elegance for
             <br />
-            Confidence
+            Every Woman.
           </h1>
 
-          <h2 className="mt-2 font-allura italic text-[#D6A69C] text-[30px] sm:text-[36px] leading-none">
-            All in One Place
+          <h2 className="mt-3 font-allura italic text-[#C5A880] text-[34px] sm:text-[44px] lg:text-[52px] leading-none">
+            Perfection for Every Little Princess.
           </h2>
 
-          <div className="my-5 flex items-center justify-center">
-            <Image
-              src="/assets/section_line.png"
-              alt="Divider"
-              width={300}
-              height={28}
-              className="h-auto w-[200px] sm:w-[240px]"
-            />
-          </div>
+          <div className="my-6 w-24 h-[1px] bg-[#C5A880]/30" />
 
-          <p className="max-w-[340px] sm:max-w-[400px] text-[15px] leading-7 text-[#C9C1BA]">
-            From trendy haircuts to radiant skin, we bring out your best —
-            every visit is a luxurious experience designed to make you feel
-            confident, beautiful and unforgettable.
+          <p className="max-w-[460px] text-[15px] sm:text-[16px] leading-7 sm:leading-8 text-[#C9C1BA] mb-8">
+            At Al Zahraa, we believe style is a reflection of confidence and grace. Designed for every special moment in your life.
           </p>
 
-          <div className="mt-8 flex flex-col items-center gap-3 w-full max-w-[320px]">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Link
               href="/contact"
-              className="w-full rounded-full px-8 py-3.5 text-sm font-semibold text-center text-[#1A120D] transition-all duration-300 hover:scale-105"
+              className="rounded-md px-8 py-3.5 text-xs font-bold tracking-widest text-[#1A120D] text-center transition-all duration-300 hover:scale-105"
               style={{
-                background: "linear-gradient(135deg,#F6DF9E,#E6C27A,#D7B06A,#B98C52)",
-                boxShadow: "0 12px 30px rgba(230,194,122,.25)",
+                background: "linear-gradient(135deg, #DFBA8C, #C5A880)",
               }}
             >
-              BOOK APPOINTMENT →
+              DISCOVER LADIES →
             </Link>
 
             <Link
               href="/services"
-              className="w-full rounded-full border border-[#B98C52] px-8 py-3.5 text-sm font-semibold text-center text-[#E6C27A] transition-all duration-300 hover:bg-[#E6C27A] hover:text-black"
+              className="rounded-md border border-[#C5A880] px-8 py-3.5 text-xs font-bold tracking-widest text-[#C5A880] text-center transition-all duration-300 hover:bg-[#C5A880]/10"
             >
-              EXPLORE SERVICES
+              DISCOVER KIDS →
             </Link>
           </div>
         </div>
-
-        {/* Desktop layout — hidden below md */}
-        <div className="hidden md:block mx-auto max-w-[1440px] px-12 lg:px-20 pt-[155px] pb-36">
-          <div className="max-w-[560px]">
-            <p className="mb-5 text-xs font-medium uppercase tracking-[8px] text-[#B99866]">
-              EXPERT CARE. STUNNING YOU.
-            </p>
-
-            <h1 className="font-cormorant font-semibold text-[#F7EFE6] text-[50px] lg:text-[58px] xl:text-[64px] leading-[1.02]">
-              Hair, Beauty &amp;
-              <br />
-              Confidence
-            </h1>
-
-            <h2 className="mt-1 font-allura italic text-[#D6A69C] text-[36px] lg:text-[44px] xl:text-[58px] leading-none">
-              All in One Place
-            </h2>
-
-            <div className="my-4">
-              <Image
-                src="/assets/section_line.png"
-                alt="Section Divider"
-                width={300}
-                height={28}
-                className="h-auto w-[300px]"
-              />
-            </div>
-
-            <p className="max-w-[470px] text-[17px] leading-8 text-[#C9C1BA]">
-              From trendy haircuts to radiant skin, we bring out your best —
-              every visit is a luxurious experience designed to make you
-              feel confident, beautiful and unforgettable.
-            </p>
-
-            <div className="mt-8 flex gap-4">
-              <Link
-                href="/contact"
-                className="rounded-full px-8 py-3.5 font-semibold text-[#1A120D] transition-all duration-300 hover:scale-105"
-                style={{
-                  background: "linear-gradient(135deg,#F6DF9E,#E6C27A,#D7B06A,#B98C52)",
-                  boxShadow: "0 15px 35px rgba(230,194,122,.25)",
-                }}
-              >
-                BOOK APPOINTMENT →
-              </Link>
-
-              <Link
-                href="/services"
-                className="rounded-full border border-[#B98C52] px-8 py-3.5 font-semibold text-[#E6C27A] transition-all duration-300 hover:bg-[#E6C27A] hover:text-black"
-              >
-                EXPLORE SERVICES
-              </Link>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   );

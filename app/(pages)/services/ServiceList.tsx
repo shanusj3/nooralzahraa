@@ -3,31 +3,31 @@ import Link from 'next/link';
 
 const services = [
   {
-    title: 'Hair Care & Styling',
-    description: 'Transform your look with our expert hair stylists. From precision cuts and vibrant color treatments to luxurious blowouts and restorative spa therapies, we tailor every service to complement your personal style and enhance your natural beauty.',
-    features: ['Precision Haircuts', 'Custom Coloring & Highlights', 'Luxurious Blowouts', 'Restorative Hair Spa'],
-    image: '/images/gallery_hair.png',
-    reverse: false,
-  },
-  {
-    title: 'The Nail Bar',
-    description: 'Experience the ultimate pampering for your hands and feet. Our nail bar offers meticulous manicures and pedicures, intricate nail art, and durable gel and acrylic enhancements, ensuring your nails always make a statement.',
-    features: ['Classic & Spa Manicures', 'Luxury Pedicures', 'Gel & Acrylic Enhancements', 'Custom Nail Art'],
-    image: '/images/gallery_nails.png',
-    reverse: true,
-  },
-  {
-    title: 'Makeup & Bridal Artistry',
-    description: 'Whether it is for a special evening, a professional photoshoot, or your wedding day, our makeup artists create flawless, glowing looks. We specialize in enhancing your features with premium products for a finish that lasts all day and night.',
-    features: ['Event & Evening Makeup', 'Complete Bridal Packages', 'Contour & Highlighting', 'Lash Enhancements'],
+    title: 'Ladies Designer Couture',
+    description: 'Transform your wardrobe with our bespoke ladies designer wear. From elegant evening gowns and traditional ethnic wear to modern chic ensembles, we tailor every dress to complement your style and provide the perfect fit.',
+    features: ['Custom Tailoring & Stitching', 'Premium Bridal Collections', 'Designer Salwar Suits & Sarees', 'Bespoke Evening Gowns'],
     image: '/images/gallery_makeup.png',
     reverse: false,
   },
   {
-    title: 'Spa & Skin Rejuvenation',
-    description: 'Step into a world of tranquility. Our spa treatments and facials are designed to rejuvenate your skin and relax your mind. Let our aestheticians assess your skin and deliver customized treatments that leave you glowing from within.',
-    features: ['Deep Cleansing Facials', 'Anti-Aging Treatments', 'Relaxing Massages', 'Skin Rejuvenation Therapy'],
+    title: 'Kids Festive & Casual Wear',
+    description: 'Dress your little ones in comfort and style. Our kids collection features premium fabrics, adorable designs, and comfortable fits for boys and girls, perfect for daily wear, festive celebrations, and special occasions.',
+    features: ['Festive & Eid Outfits', 'Comfortable Daily Wear', 'Custom Sizing & Fits', 'Premium Soft Fabrics'],
     image: '/images/gallery_spa.png',
+    reverse: true,
+  },
+  {
+    title: 'Bridal & Occasion Couture',
+    description: 'Make your special day unforgettable with our custom bridal and festive wear. We design intricate lehengas, heavy anarkalis, and stunning gowns, handcrafted with beautiful embroidery, beadwork, and premium embellishments.',
+    features: ['Custom Bridal Lehenga', 'Handcrafted Embroidery & Zardozi', 'Festive Anarkalis & Gowns', 'Personalized Design Consultations'],
+    image: '/images/gallery_hair.png',
+    reverse: false,
+  },
+  {
+    title: 'Accessories & Custom Fittings',
+    description: 'Complete your outfit with our handpicked collection of matching clutches, jewelry, and luxury stoles. We also provide precise alteration services to ensure that any of your outfits fit you like a dream.',
+    features: ['Luxury Clutches & Handbags', 'Matching Hijabs & Stoles', 'Bespoke Alteration Services', 'Curated Statement Jewelry'],
+    image: '/images/gallery_nails.png',
     reverse: true,
   }
 ];
@@ -84,7 +84,7 @@ export default function ServiceList() {
                   href="/contact"
                   className="inline-block rounded-full bg-[#241B14] px-8 py-4 text-xs font-semibold tracking-widest text-white uppercase transition-all duration-300 hover:bg-[#B99866]"
                 >
-                  Book This Service
+                  Inquire / Book Consultation
                 </Link>
               </div>
             </div>

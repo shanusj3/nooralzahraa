@@ -23,7 +23,7 @@ export default function ContactHero() {
         </div>
         
         <p className="max-w-[600px] text-[16px] leading-relaxed text-gray-300">
-          Whether you want to book an appointment, inquire about our bridal packages, or simply have a question about our services, our team is ready to assist you.
+          Whether you want to book a design consultation, inquire about our bridal couture, or have a question about our kids wear collections, our team is ready to assist you.
         </p>
       </div>
     </section>

@@ -1,15 +1,15 @@
 import Image from 'next/image';
 
 const allImages = [
-  { src: '/images/gallery_hair.png', alt: 'Hair Styling', category: 'Hair' },
-  { src: '/images/gallery_makeup.png', alt: 'Makeup Artistry', category: 'Makeup' },
-  { src: '/images/gallery_nails.png', alt: 'Nail Art', category: 'Nails' },
-  { src: '/images/gallery_spa.png', alt: 'Spa Treatment', category: 'Spa' },
-  { src: '/images/gallery1.png', alt: 'Haircuts', category: 'Hair' },
-  { src: '/images/gallery2.png', alt: 'Hair Color', category: 'Hair' },
-  { src: '/images/gallery3.png', alt: 'Hair Spa', category: 'Spa' },
-  { src: '/images/gallery4.png', alt: 'Facials', category: 'Spa' },
-  { src: '/images/gallery5.png', alt: 'Nail Art 2', category: 'Nails' },
+  { src: '/images/gallery_bridal_1_1785247795685.png', alt: 'Luxury Bridal Lehenga', category: 'Bridal Wear' },
+  { src: '/images/gallery_ladies_1_1785247816751.png', alt: 'Emerald Silk Evening Gown', category: 'Ladies Wear' },
+  { src: '/images/gallery_accessories_1_1785247836272.png', alt: 'Designer Bridal Clutch', category: 'Accessories' },
+  { src: '/assets/about_hijab_arched.jpg', alt: 'Elegant Hijab Dress', category: 'Ladies Wear' },
+  { src: '/images/premium_banner.png', alt: 'Intricate Dress Embroidery', category: 'Bridal Wear' },
+  { src: '/images/gallery_hair.png', alt: 'Bespoke Evening Gown Fitting', category: 'Ladies Wear' },
+  { src: '/images/gallery_nails.png', alt: 'Festive Wear details', category: 'Accessories' },
+  { src: '/images/gallery_spa.png', alt: 'Kids Designer Wear', category: 'Kids Wear' },
+  { src: '/images/gallery_makeup.png', alt: 'Elegant Salwar Kameez', category: 'Ladies Wear' },
 ];
 
 export default function GalleryGrid() {
@@ -19,7 +19,7 @@ export default function GalleryGrid() {
         
         {/* Simple Filter placeholder (UI only for now) */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">
-          {['ALL', 'HAIR', 'MAKEUP', 'NAILS', 'SPA'].map((filter, i) => (
+          {['ALL', 'LADIES WEAR', 'KIDS WEAR', 'BRIDAL WEAR', 'ACCESSORIES'].map((filter, i) => (
             <button 
               key={i}
               className={`px-6 py-2 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-300 ${i === 0 ? 'bg-[#241B14] text-white' : 'bg-transparent text-[#5C4F44] border border-[#EADFCF] hover:border-[#B99866] hover:text-[#B99866]'}`}

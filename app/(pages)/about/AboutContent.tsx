@@ -4,21 +4,21 @@ export default function AboutContent() {
   const coreValues = [
     {
       title: 'Expertise & Artistry',
-      description: 'Our team comprises highly trained professionals dedicated to mastering the latest trends and timeless techniques in beauty.',
+      description: 'Our team comprises master designers and tailors dedicated to translating your ideas into beautiful bespoke fashion statements.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B99866" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
       )
     },
     {
-      title: 'Premium Products',
-      description: 'We believe that exceptional results require exceptional tools. We use only the finest, carefully curated luxury beauty products.',
+      title: 'Premium Fabrics',
+      description: 'We believe that exceptional garments start with exceptional materials. We source only the finest silks, cottons, and embroidery components.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B99866" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"/><path d="M15 7h6v6"/></svg>
       )
     },
     {
-      title: 'Luxurious Sanctuary',
-      description: 'Step into a world designed for your relaxation. Our salon is a calm, elegant space where you can unwind and be pampered.',
+      title: 'Bespoke Experience',
+      description: 'Enjoy a dedicated fitting and consultation environment. Our boutique provides a welcoming, private space for custom consultations.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B99866" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       )
@@ -48,15 +48,15 @@ export default function AboutContent() {
           {/* Text Side */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <h3 className="font-cormorant text-[40px] font-semibold text-[#241B14] mb-8 md:text-[48px] leading-tight">
-              A Legacy of <span className="font-allura text-[#B99866] font-normal text-[50px] md:text-[60px] inline-block ml-2">Beauty</span>
+              A Legacy of <span className="font-allura text-[#B99866] font-normal text-[50px] md:text-[60px] inline-block ml-2">Fashion</span>
             </h3>
             
             <p className="text-[16px] leading-relaxed text-[#5C4F44] mb-6">
-              At Noor Al Zahraa Ladies Salon, we believe that beauty is deeply personal. What started as an intimate studio dedicated to excellence has blossomed into one of the city's most sought-after luxury beauty destinations.
+              At Noor Al Zahraa Ladies & Kids Boutique, we believe that fashion is a form of self-expression. What started as an intimate custom-tailoring studio dedicated to quality stitching has blossomed into one of the city's premier luxury fashion destinations.
             </p>
             
             <p className="text-[16px] leading-relaxed text-[#5C4F44] mb-10">
-              Our vision was simple: to create a space where women could step away from the demands of daily life and immerse themselves in an environment of total luxury and care. Every detail of our salon, from the lighting to the treatments, has been meticulously crafted to provide an unparalleled experience of elegance and rejuvenation.
+              Our vision was simple: to create a styling house where families can find gorgeous custom attire for special occasions and daily wear. From delicate fabrics to handcrafted embroidery, every detail in our collections is carefully curated and tailored to fit you like a glove.
             </p>
             
             <div className="flex items-center gap-6">
@@ -66,7 +66,7 @@ export default function AboutContent() {
               </div>
               <div>
                 <h4 className="font-semibold text-[#241B14] text-[18px]">Noor Al Zahraa</h4>
-                <p className="text-[#B99866] text-sm uppercase tracking-widest mt-1">Founder & Lead Stylist</p>
+                <p className="text-[#B99866] text-sm uppercase tracking-widest mt-1">Founder & Creative Director</p>
               </div>
             </div>
           </div>

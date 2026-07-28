@@ -11,7 +11,7 @@ export default function ContactForm() {
             Contact Information
           </h2>
           <p className="text-[#5C4F44] text-[16px] leading-relaxed mb-12">
-            Visit our luxurious salon in the heart of the city, or reach out to us via phone or email. We look forward to welcoming you.
+            Visit our luxurious boutique in the heart of the city, or reach out to us via phone or email. We look forward to welcoming you.
           </p>
           
           <div className="flex flex-col gap-8">
@@ -31,9 +31,10 @@ export default function ContactForm() {
               <div className="w-12 h-12 rounded-full bg-white border border-[#EADFCF] flex items-center justify-center flex-shrink-0 text-[#B99866]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               </div>
-              <div>
+              <div className="flex flex-col gap-1">
                 <h4 className="font-bold text-[#241B14] mb-1">Call Us</h4>
-                <p className="text-[#5C4F44]">+1 (555) 123-4567<br/>+1 (555) 987-6543</p>
+                <a href="tel:+971558813966" className="text-[#5C4F44] hover:text-[#B99866] transition-colors">055 881 3966</a>
+                <a href="tel:+971563728991" className="text-[#5C4F44] hover:text-[#B99866] transition-colors">+971 56 372 8991</a>
               </div>
             </div>
             
@@ -69,12 +70,13 @@ export default function ContactForm() {
               </div>
               
               <div className="flex flex-col gap-2">
-                <label className="text-sm font-semibold text-[#241B14]">Service Requested (Optional)</label>
+                <label className="text-sm font-semibold text-[#241B14]">Inquiry Type (Optional)</label>
                 <select className="w-full border-b border-[#EADFCF] bg-transparent py-3 text-[#5C4F44] focus:outline-none focus:border-[#B99866] transition-colors appearance-none">
-                  <option>Hair Styling & Color</option>
-                  <option>Bridal Makeup</option>
-                  <option>Nail Art & Care</option>
-                  <option>Spa & Facial</option>
+                  <option>Ladies Custom Tailoring</option>
+                  <option>Bridal Lehenga & Gown Design</option>
+                  <option>Kids Festive Collection</option>
+                  <option>Ready-to-Wear Outfits</option>
+                  <option>Alterations & Fittings</option>
                   <option>Other / General Inquiry</option>
                 </select>
               </div>

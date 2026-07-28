@@ -1,113 +1,78 @@
-import Image from "next/image";
+import React from "react";
 
-const services = [
+const features = [
   {
-    title: "HAIRCUT &\nSTYLING",
-    subtitle: "Look your best",
-    image: "/assets/haircut_and_styling.png",
+    title: "PREMIUM QUALITY",
+    description: "Finest fabrics and attention to every detail",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C5A880" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" />
+        <path d="M3 16h18" />
+        <path d="M12 16v4" />
+        <path d="M8 20h8" />
+      </svg>
+    ),
   },
   {
-    title: "HAIR\nCOLORING",
-    subtitle: "Refresh your look",
-    image: "/assets/hair_coloring.png",
+    title: "ELEGANT DESIGNS",
+    description: "Thoughtfully designed for every occasion",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C5A880" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 10h6l-1 8h-4z" />
+        <path d="M12 2v8" />
+        <path d="M9 4a3 3 0 0 1 6 0" />
+        <path d="M12 18v4" />
+        <path d="M10 22h4" />
+      </svg>
+    ),
   },
   {
-    title: "HAIR\nTREATMENTS",
-    subtitle: "Nourish & Repair",
-    image: "/assets/HAIR_TREATMENTS.png",
+    title: "EXPERT CRAFTSMANSHIP",
+    description: "Perfect stitching with a personal touch",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C5A880" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 18h18" />
+        <path d="M7 18V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12" />
+        <path d="M15 8h4" />
+        <circle cx="12" cy="11" r="2" />
+        <path d="M12 13v5" />
+      </svg>
+    ),
   },
   {
-    title: "SKIN\nCARE",
-    subtitle: "Glow naturally",
-    image: "/assets/SKIN_CARE.png",
-  },
-  {
-    title: "NAIL\nART",
-    subtitle: "Beautiful details",
-    image: "/assets/NAIL_ART.png",
-  },
-  {
-    title: "BRIDAL\nSERVICES",
-    subtitle: "For your big day",
-    image: "/assets/BRIDAL_SERVICES.png",
+    title: "MADE WITH LOVE",
+    description: "Crafted for comfort, made to make you shine",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A880" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+      </svg>
+    ),
   },
 ];
 
 export default function ServicesBar() {
   return (
-    <section className="w-full flex justify-center px-4 py-10 mt-[-8%]">
-      {/* GOLDEN GRADIENT BORDER WRAPPER */}
-      <div
-        className="
-          w-full
-          max-w-6xl
-          rounded-[28px]
-          p-[1.5px]
-          bg-[linear-gradient(135deg,#F4E2B8_0%,#C9963E_25%,#8A6738_50%,#E6C17B_75%,#F4E2B8_100%)]
-          shadow-[0_20px_60px_rgba(0,0,0,.45)]
-        "
-      >
-        <div
-          className="
-            relative
-            w-full
-            overflow-hidden
-            rounded-[27px]
-            bg-[#171411]
+    <section className="w-full bg-[#0E0D0B] text-white py-12 px-6 sm:px-12 border-y border-[#C5A880]/15">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0">
+        {features.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-col items-center text-center px-6 lg:border-r border-[#C5A880]/15 last:border-0`}
+          >
+            {/* ICON wrapper */}
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#C5A880]/5 text-[#C5A880]">
+              {item.icon}
+            </div>
 
-            before:absolute
-            before:inset-0
-            before:bg-[radial-gradient(circle_at_bottom,rgba(166,118,56,.18),transparent_60%)]
-            before:pointer-events-none
+            <h3 className="text-[13px] font-bold uppercase tracking-[0.15em] text-[#C5A880] mb-2">
+              {item.title}
+            </h3>
 
-            after:absolute
-            after:bottom-0
-            after:left-0
-            after:right-0
-            after:h-32
-            after:bg-gradient-to-t
-            after:from-[#8C6030]/20
-            after:via-[#5C3F20]/10
-            after:to-transparent
-            after:pointer-events-none
-          "
-        >
-          {/* Extra soft corner glows */}
-          <div className="absolute -left-28 bottom-0 h-72 w-72 rounded-full bg-[#D9A55A]/10 blur-[120px]" />
-          <div className="absolute -right-28 top-0 h-72 w-72 rounded-full bg-[#D9A55A]/10 blur-[120px]" />
-
-          <div className="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`relative flex flex-col items-center justify-center px-6 py-8 text-center ${
-                  index !== services.length - 1
-                    ? "border-r border-[#8A6738]/25"
-                    : ""
-                }`}
-              >
-                {/* IMAGE PLACEHOLDER */}
-                <div className="mb-5 flex h-16 w-24 items-center justify-center">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    width={96}
-                    height={64}
-                    className="object-contain"
-                  />
-                </div>
-
-                <h3 className="whitespace-pre-line text-[18px] font-medium uppercase tracking-[0.08em] leading-6 text-[#E6C17B]">
-                  {service.title}
-                </h3>
-
-                <p className="mt-2 text-sm text-[#DDD6CB]">
-                  {service.subtitle}
-                </p>
-              </div>
-            ))}
+            <p className="text-xs text-[#DDD6CB] max-w-[200px] leading-relaxed">
+              {item.description}
+            </p>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

@@ -4,20 +4,20 @@ export default function TestimonialSection() {
   const testimonials = [
     {
       name: 'Sarah M.',
-      service: 'Hair Styling & Color',
-      review: '"Absolutely amazing experience! The staff was incredibly welcoming, and my hair has never looked better. The attention to detail is truly unmatched."',
+      service: 'Custom Tailored Gown',
+      review: '"Absolutely amazing experience! The dress fits perfectly and the embroidery details are breathtaking. Noor Al Zahraa Boutique is my absolute favorite place now."',
       rating: 5,
     },
     {
       name: 'Aisha K.',
-      service: 'Bridal Makeup',
-      review: '"They made my special day even more perfect. The makeup was flawless and lasted all night. Highly recommend for any bride-to-be!"',
+      service: 'Kids Festive Outfits',
+      review: '"I bought matching outfits for my children for Eid. The fabrics are incredibly soft, comfortable, and the design details are absolutely beautiful. Highly recommend!"',
       rating: 5,
     },
     {
       name: 'Fatima R.',
-      service: 'Luxury Spa Day',
-      review: '"The most relaxing spa day I have ever had. The ambiance is so luxurious and calming. I left feeling completely rejuvenated."',
+      service: 'Bridal Lehenga Couture',
+      review: '"They made my dream wedding outfit a reality. The fit was flawless, the zardozi handwork was stunning, and the process was so personal and stress-free. Thank you!"',
       rating: 5,
     }
   ];

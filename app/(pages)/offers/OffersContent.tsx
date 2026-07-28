@@ -2,25 +2,25 @@ import Image from 'next/image';
 
 const offers = [
   {
-    title: 'The Bridal Glow Package',
-    description: 'Prepare for your special day with our ultimate bridal package. Includes a full hair spa, premium facial, elegant bridal makeup trial, and a classic manicure & pedicure.',
-    price: '$299',
-    originalPrice: '$450',
-    image: '/images/gallery_makeup.png',
+    title: 'The Bridal Dream Package',
+    description: 'Design your dream wedding outfit with our complete bridal package. Includes a personalized design consultation, premium fabric selection, hand embroidery, and two fitting sessions.',
+    price: 'AED 2,500',
+    originalPrice: 'AED 3,500',
+    image: '/images/gallery_hair.png',
   },
   {
-    title: 'Weekday Spa Retreat',
-    description: 'Escape the weekday stress. Book any 60-minute relaxing massage and receive a complimentary deep-cleansing express facial.',
-    price: '$120',
-    originalPrice: '$180',
+    title: 'Kids Sibling Festive Set',
+    description: 'Dress your little ones in matching festive style. Get a special discount when you order custom celebratory wear for siblings, including fabric selection and tailor fitting.',
+    price: 'AED 350',
+    originalPrice: 'AED 500',
     image: '/images/gallery_spa.png',
   },
   {
-    title: 'Color & Cut Transformation',
-    description: 'Ready for a new look? Enjoy a full balayage or color treatment, complete with a precision haircut and a luxurious blowout.',
-    price: '$180',
-    originalPrice: '$240',
-    image: '/images/gallery_hair.png',
+    title: 'Tailoring & Embroidery Combo',
+    description: 'Transform your fabrics into masterpieces. Enjoy our premium custom stitching, master-tailored fit, and delicate handcrafted border embroidery.',
+    price: 'AED 600',
+    originalPrice: 'AED 850',
+    image: '/images/gallery_makeup.png',
   }
 ];
 

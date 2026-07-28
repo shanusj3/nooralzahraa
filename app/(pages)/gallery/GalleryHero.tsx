@@ -8,11 +8,11 @@ export default function GalleryHero() {
       
       <div className="relative z-10 mx-auto max-w-7xl flex flex-col items-center text-center">
         <p className="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-[#B99866]">
-          MASTERPIECES OF BEAUTY
+          EXQUISITE CREATIONS
         </p>
         
         <h1 className="mb-6 font-cormorant text-[50px] font-medium leading-tight text-white md:text-[60px] lg:text-[72px]">
-          Our Portfolio
+          Our Design Portfolio
         </h1>
         
         <div className="my-6 flex items-center justify-center gap-3">
@@ -22,7 +22,7 @@ export default function GalleryHero() {
         </div>
         
         <p className="max-w-[600px] text-[16px] leading-relaxed text-gray-300">
-          Explore a curated collection of our finest work. From transformative color treatments to flawless bridal makeup, our portfolio is a testament to the artistry and dedication of the Noor Al Zahraa team.
+          Explore a curated showcase of our bespoke fashion designs. From gorgeous ladies evening gowns to cute kids festive wear and custom bridal couture, our portfolio reflects our passion for style and craftsmanship.
         </p>
       </div>
     </section>
