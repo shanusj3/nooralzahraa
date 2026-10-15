@@ -1,36 +1,39 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://alzahraa.ae';
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || 'https://alzahraaboutique.ae';
+
+  const lastModified = new Date();
 
   return [
     {
-      url: `${baseUrl}`,
-      lastModified: new Date(),
+      url: `${baseUrl}/`,
+      lastModified,
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/services`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/gallery`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
